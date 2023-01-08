@@ -1,5 +1,6 @@
 terraform {
     backend "s3" {
-        key = "networking/dev-vpc/terraform.tfstate"
+        key = "networking/optum-vpc/terraform.tfstate"
+        dynamodb_table = "globo-tfstatelock-58709"
     }
 }
