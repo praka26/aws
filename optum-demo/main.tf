@@ -1,4 +1,4 @@
-module "s3" {
+/* module "s3" {
   source = "terraform-aws-modules/s3-bucket/aws"
   #bucket name should be unique
   bucket = "optum-demo"
@@ -7,7 +7,7 @@ module "s3" {
   versioning = {
     enabled = true
   }
-}
+} */
 /* module "s3" {
     source = "./modules/s3"
     #bucket name should be unique
