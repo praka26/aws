@@ -4,7 +4,7 @@
 
 variable "region" {
   type    = string
-  default = "us-east-1"
+  #default = "us-east-1"
 }
 
 
@@ -28,7 +28,7 @@ variable "naming_prefix" {
 }
 
 variable "amis" {
-  type = map
+  type = map(any)
 
   default = {
     us-east-1 = "ami-6869aa05"
@@ -54,3 +54,11 @@ variable "aws_region" {
 #variable "my_public_ip" {}
 
 #variable "private_key_path" {}
+variable "aws_access_key" {}
+  
+variable "aws_secret_key" {}
+#variable "bucket_name" {}
+   
+variable "acl_value" {
+  default = "private"
+}
