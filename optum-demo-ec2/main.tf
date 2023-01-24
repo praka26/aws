@@ -18,6 +18,6 @@ module "ec2" {
 }
 module "s3" {
   source    = "./modules/s3"
-  bucket_name = "mydemobucket-pravin1234567"
+  bucket_name = "mydemobucket-pravin12345678"
  }
 
